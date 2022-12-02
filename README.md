@@ -56,7 +56,8 @@ They fine-tune a pre-trained model for POS tagging using different languages for
 
 Note that all models are trained with the same hyper-parameter settings.
 
-![Fig3](./fig3.jpeg)
+![Fig3](./fig3.jpeg) 
+
 Fig.3 The dendogram (image taken from the paper) shows the test accuracies for every combination of source and target langauges.
 
 This figure illustrates the POS tagging (test) accuracies for every combination of source and target language. The source langauges are represented by columns and target languages are represented by rows. XLM-RoBERTa base is fine-tuned on the source langauge. The colors that we see here in the dendograms represent different language families. This heat map essentially shows that the model has a relatively high performance where source and target languages match. Also, for quite a few target languages, we can observe high performance when trraining is done on several other languages. The authors highlight Russian in this case as an example. The authors also highlight a substantial amount of variation for cross-lingual accuracies, and show that whether source and target languages are part of the same language family really matters for accuracy. 
