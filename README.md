@@ -51,7 +51,11 @@ Overall, the paper's contributions are as follows:
 Here is an example demo from the huggingface that better illustrates the work:
 
 
-![Fig.2 Please note that this image is taken from one of the author's tweet on Twitter.](./fig2.jpeg)
+<figure>
+  <p align="center"><img src="./fig2.jpeg" alt="demo"/></p>
+  <figcaption>Fig.2 Please note that this image is taken from one of the author's tweet on Twitter.</figcaption>
+</figure>
+<br></br>
 
 
 ## Approach and Results
@@ -60,22 +64,37 @@ They fine-tune a pre-trained model for POS tagging using different languages for
 
 Note that all models are trained with the same hyper-parameter settings.
 
-![Fig.3 The dendogram (image taken from the paper) shows the test accuracies for every combination of source and target langauges.](./fig3.jpeg)
+<figure>
+  <p align="center"><img src="./fig3.jpeg" alt="result" width="800"/></p> 
+  <figcaption>Fig.3 The dendogram (image taken from the paper) shows the test accuracies for every combination of source and target langauges. </figcaption>
+</figure>
+<br></br>
 
 This figure illustrates the POS tagging (test) accuracies for every combination of source and target language. The source langauges are represented by columns and target languages are represented by rows. XLM-RoBERTa base is fine-tuned on the source langauge. The colors that we see here in the dendograms represent different language families. This heat map essentially shows that the model has a relatively high performance where source and target languages match. Also, for quite a few target languages, we can observe high performance when trraining is done on several other languages. The authors highlight Russian in this case as an example. The authors also highlight a substantial amount of variation for cross-lingual accuracies, and show that whether source and target languages are part of the same language family really matters for accuracy. 
 
-![Fig.4 This figure (image taken from the paper) shows the average accuracies for each combination of source and target language based target languages.](./fig4.jpeg)
+<figure>
+  <p align="center"><img src="./fig4.jpeg" alt="result"/></p>
+  <figcaption>Fig.4 This figure (image taken from the paper) shows the average accuracies for each combination of source and target language based target languages. </figcaption>
+</figure>
+<br></br>
 
 We can see that high performance can be observed within language families (highlighted using black outlines in the figure) - if we think about it, this is quite intuitive! The authors also find that accuracy is higher when the source and target language are the same, but transfer also works between different families. The figure might also help us understand that some family combinations might not be suitable. 
 
-
-![Fig.5 This figure (image taken from the paper) shows average accuracies for each combination of source and target writing system based on target languages included in pre-training. Note that the numbers between parentheses represent the number of languages that use each writing system. ](./fig5.jpeg)
+<figure>
+  <p align="center"><img src="./fig5.jpeg" alt="result"/></p>
+  <figcaption>Fig.5 This figure (image taken from the paper) shows average accuracies for each combination of source and target writing system based on target languages included in pre-training. Note that the numbers between parentheses represent the number of languages that use each writing system. </figcaption>
+</figure>
+<br></br>
 
 We can see that some writing systems have very low accuracies and others that are used by a single target language have high performance irrespective of the source languages. The authors highlight Tamil, Hebrew, Telugu as some examples. Cross-script transfer seems to work very well for some writing systems.
 
 The authors identify the lowest within-language accuracy to be in case of Sanskrit (84.2%). The low performing source languages are then identified based on this threshold, i.e., where the best cross-lingual accuracy is below 84.2%. 
 
-![Fig.6 Here are 11 optimal language pairs highlighted in the paper.](./fig6.jpeg)
+<figure>
+  <p align="center"><img src="./fig6.jpeg" alt="result" width="300"/></p>
+  <figcaption>Fig.6 Here are 11 optimal language pairs highlighted in the paper.</figcaption>
+</figure>
+<br></br>
 
 The authors also highlight some interesting optimal language pairs. In some of these pairs, such as French and Italian or Hindi and Urdu, I can personally relate to their similarities! The authors claim that highly similar languages are the best source languages for each other.
 
