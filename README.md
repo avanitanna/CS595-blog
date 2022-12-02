@@ -24,7 +24,11 @@ Demo: <https://huggingface.co/spaces/wietsedv/xpos>
 ## Introduction
 
 
-![Fig.1 Please note that this word cloud image is taken from alamy.](./fig1.jpeg)
+<figure>
+  <p align="center"><img src="./fig1.jpeg" alt="word cloud" style="width:100%"></p>
+  <figcaption>Fig.1 Please note that this word cloud image is taken from alamy.</figcaption>
+</figure>
+<br></br>
 
 A lot of models today rely on fine-tuning pre-trained models for most of the NLP tasks with annotated data very specific to the task. But so many languages don't have such labelled data available. Think about Afrikans,Estonian, Sanskrit, Welsh to name a few! Can we take help from other languages? One idea is to use cross-lingual fine tuning of multilingual pre-trained language models such that we can then use data from one language (say source language, one that has labelled data) to model phenomenon from another language (say target language, one that does not have labelled data). Can you think of the most commonly used language for such models? You guessed that right! Most of the times, the language that is used to do so is English! But is that really accurate? Aren't we making an assumption here that English is a representative source language? Perhaps, similarities between source and target languages can influence our results. So how do we determine what a good source and target language is for cross lingual transfer? 
 
