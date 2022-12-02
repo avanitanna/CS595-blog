@@ -1,5 +1,5 @@
 ---
-title: Make the Best of Cross-lingual Transfer - Evidence from POS Tagging with over 100 Languages
+title: Cross-lingual Transfer - A case study
 authors: Avani Tanna
 date: 12-01-2022
 tag:
