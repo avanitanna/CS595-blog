@@ -24,7 +24,7 @@ Demo: <https://huggingface.co/spaces/wietsedv/xpos>
 ## Introduction
 
 <figure>
-  <img src="languages.jpg" alt="word cloud" style="width:100%">
+  <p align="center"><img src="./fig1.jpg" alt="word cloud" style="width:100%"></p>
   <figcaption>Fig.1 Please note that this word cloud image is taken from alamy.</figcaption>
 </figure>
 <br></br>
@@ -49,7 +49,7 @@ Overall, the paper's contributions are as follows:
 Here is an example demo from the huggingface that better illustrates the work:
 
 <figure>
-  <p align="center"><img src="./demo.jfif" alt="image2"/></p>
+  <p align="center"><img src="./fig2.png" alt="demo"/></p>
   <figcaption>Fig.2 Please note that this image is taken from one of the author's tweet on Twitter.</figcaption>
 </figure>
 <br></br>
@@ -61,7 +61,7 @@ They fine-tune a pre-trained model for POS tagging using different languages for
 Note that all models are trained with the same hyper-parameter settings.
 
 <figure>
-  <p align="center"><img src="./result.jfif" alt="result" width="800"/></p> 
+  <p align="center"><img src="./fig3.png" alt="result" width="800"/></p> 
   <figcaption>Fig.3 The dendogram (image taken from the paper) shows the test accuracies for every combination of source and target langauges. </figcaption>
 </figure>
 <br></br>
@@ -69,7 +69,7 @@ Note that all models are trained with the same hyper-parameter settings.
 This figure illustrates the POS tagging (test) accuracies for every combination of source and target language. The source langauges are represented by columns and target languages are represented by rows. XLM-RoBERTa base is fine-tuned on the source langauge. The colors that we see here in the dendograms represent different language families. This heat map essentially shows that the model has a relatively high performance where source and target languages match. Also, for quite a few target languages, we can observe high performance when trraining is done on several other languages. The authors highlight Russian in this case as an example. The authors also highlight a substantial amount of variation for cross-lingual accuracies, and show that whether source and target languages are part of the same language family really matters for accuracy. 
 
 <figure>
-  <p align="center"><img src="./results_1.png" alt="result_1"/></p>
+  <p align="center"><img src="./fig4.png" alt="result"/></p>
   <figcaption>Fig.4 This figure (image taken from the paper) shows the average accuracies for each combination of source and target language based target languages. </figcaption>
 </figure>
 <br></br>
@@ -77,7 +77,7 @@ This figure illustrates the POS tagging (test) accuracies for every combination 
 We can see that high performance can be observed within language families (highlighted using black outlines in the figure) - if we think about it, this is quite intuitive! The authors also find that accuracy is higher when the source and target language are the same, but transfer also works between different families. The figure might also help us understand that some family combinations might not be suitable. 
 
 <figure>
-  <p align="center"><img src="./results_2.png" alt="result_2"/></p>
+  <p align="center"><img src="./fig5.png" alt="result"/></p>
   <figcaption>Fig.5 This figure (image taken from the paper) shows average accuracies for each combination of source and target writing system based on target languages included in pre-training. Note that the numbers between parentheses represent the number of languages that use each writing system. </figcaption>
 </figure>
 <br></br>
@@ -87,7 +87,7 @@ We can see that some writing systems have very low accuracies and others that ar
 The authors identify the lowest within-language accuracy to be in case of Sanskrit (84.2%). The low performing source languages are then identified based on this threshold, i.e., where the best cross-lingual accuracy is below 84.2%. 
 
 <figure>
-  <p align="center"><img src="./results_3.png" alt="result_3" width="300"/></p>
+  <p align="center"><img src="./fig6.png" alt="result" width="300"/></p>
   <figcaption>Fig.6 Here are 11 optimal language pairs highlighted in the paper.</figcaption>
 </figure>
 <br></br>
