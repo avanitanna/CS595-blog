@@ -1,5 +1,5 @@
 ---
-title: Cross-lingual Transfer - A case study
+title: Cross-lingual Transfer - A Case Study
 authors: Avani Tanna
 date: 12-01-2022
 tag:
