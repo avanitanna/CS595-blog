@@ -1,5 +1,5 @@
 ---
-title: Make the Best of Cross-lingual Transfer: Evidence from POS Tagging with over 100 Languages
+title: Make the Best of Cross-lingual Transfer - Evidence from POS Tagging with over 100 Languages
 authors: Avani Tanna
 date: 12-01-2022
 tag:
@@ -12,7 +12,7 @@ category:
 
 Hello amazing readers! In this post, I would like to discuss the paper *Make the Best of Cross-lingual Transfer: Evidence from POS Tagging with over 100 Languages* which is authored by Wietse de Vries, Martijn Wieling, and Malvina Nissim. 
 
-Blog Reading Time: About 10 minutes.
+Reading Time: About 10 minutes.
 
 Paper：<https://aclanthology.org/2022.acl-long.529>
 
